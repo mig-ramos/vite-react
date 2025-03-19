@@ -11,6 +11,9 @@ export const Menu = () => {
         <li>
           <Link to="/about">About</Link>
         </li>
+        <li>
+          <Link to="/posts/:id">Post</Link>
+        </li>
       </ul>
     </nav>
   );
