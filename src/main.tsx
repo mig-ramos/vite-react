@@ -6,6 +6,7 @@ import { Home } from "./components/Home/index.tsx";
 import { About } from "./components/About/index.tsx";
 import { Menu } from "./components/Menu/index.tsx";
 import { Post } from "./components/Post/index.tsx";
+import { Redirect } from "./components/Redirect/index.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/posts/:id" element={<Post />} />
+        <Route path="/redirect" element={<Redirect />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
