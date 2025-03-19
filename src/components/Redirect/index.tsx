@@ -15,6 +15,10 @@ export const Redirect = () => {
     if (time <= 0) {
       navigate("/");
     }
+
+    return () => {
+      clearTimeout(timeout.current);
+    };
   }, [time]);
   return (
     <div>
